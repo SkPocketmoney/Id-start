@@ -12,9 +12,11 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif; /* Added a font-family for better aesthetics */
+            background-color: #f5f5f5; /* Added a light background color for contrast */
         }
         .button {
-            width: 300px;
+            width: 450px;
             height: 100px;
             font-size: 24px;
             margin: 20px;
@@ -29,10 +31,18 @@
             background-color: #0056b3;
         }
     </style>
+    <script>
+        function openAndClose(url) {
+            var newWindow = window.open(url);
+            setTimeout(function() {
+                newWindow.close();
+            }, 2000);
+        }
+    </script>
 </head>
 <body>
-    <button class="button" onclick="location.href='https://www.hipi.co.in/@onlybeauty_girl'">ID - 1</button>
-    <button class="button" onclick="location.href='https://www.hipi.co.in/@mhindi445'">ID - 2</button>
-    <button class="button" onclick="location.href='https://www.bing.com'">Login</button>
+    <button class="button" onclick="openAndClose('https://www.hipi.co.in/@onlybeauty_girl')">ID - 1</button>
+    <button class="button" onclick="openAndClose('https://www.hipi.co.in/@mhindi445')">ID - 2</button>
+    <button class="button" onclick="openAndClose('https://www.bing.com')">Login</button>
 </body>
 </html>
